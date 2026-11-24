@@ -1,0 +1,169 @@
+
+.brand-page {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  color: #172b4d;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.brand-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: #e8efff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-header h1 {
+  margin: 0 0 7px;
+  font-size: 28px;
+  font-weight: 750;
+}
+
+.brand-header p,
+.brand-card > p {
+  color: #64748b;
+  margin: 0;
+}
+
+.brand-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+}
+
+.brand-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: 21px;
+}
+
+.brand-input {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.brand-input input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.brand-input input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.brand-input button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.brand-input button:hover {
+  background: #1d4ed8;
+}
+
+.brand-input button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.brand-result {
+  margin-top: 26px;
+  padding: 22px;
+  border-radius: 12px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+}
+
+.brand-result.high {
+  background: #fff1f2;
+  border-color: #fecdd3;
+  color: #9f1239;
+}
+
+.brand-result.low {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #065f46;
+}
+
+.brand-result.uncertain {
+  background: #fffbeb;
+  border-color: #fde68a;
+  color: #92400e;
+}
+
+.brand-result-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.brand-result-heading h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.brand-result p {
+  margin: 9px 0;
+  line-height: 1.6;
+}
+
+.brand-note {
+  margin-top: 20px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .brand-page {
+    padding: 25px 15px;
+  }
+
+  .brand-header h1 {
+    font-size: 22px;
+  }
+
+  .brand-card {
+    padding: 20px;
+  }
+
+  .brand-input {
+    flex-direction: column;
+  }
+
+  .brand-input button {
+    width: 100%;
+  }
+}
